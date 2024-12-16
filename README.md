@@ -34,3 +34,49 @@ Start the backend with java -jar target/your-backend-application.jar.
 Contributing:
 Feel free to fork this repo and submit pull requests with improvements, features, or bug fixes. Please ensure that all contributions follow the coding standards used in the project.
 
+////////////////////////////////////////
+
+front-end - React-Native
+Back-end  - SpringBoot
+DB        - MySql localhost:3306
+#E4D9C6; - SOFT BEIGE - TEXT
+#2A403D; - green - BACKGROUND COLOR
+
+- user
+    login / reg(sign-up)
+    
+    -registration/sign-up
+       username/gmail
+       password     // 1cap , 1 spcl charcter , 1 number
+       confirm password
+
+    -custom user profile // user can skip this page if needed
+       profile picture
+       dob
+       height
+       body weight
+
+    -login
+       username/gmail
+       password
+       
+     
+     
+    
+    
+- landing Page
+
+     - show user profile
+         show profile picture
+         show current body weight
+         show streak -(when user create a new workout each day streak should add up)
+         -  log button - shows workout of last 1 week
+         -  Add new workout button  +
+         -  PR button - shows "dynamic" PR
+
+     
+
+
+concerns
+
+- multiple users with same username/ Gmail should not be allowed
