@@ -51,6 +51,7 @@ DB        - MySql localhost:3306
        confirm password
 
     -custom user profile // user can skip this page if needed
+       Email              // befr next step ask user on a popup where they want                  a push notification via email
        profile picture
        dob
        height
