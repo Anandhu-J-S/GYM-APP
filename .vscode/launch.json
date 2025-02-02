@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GymAppServerApplication<gym_app_server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.gym_app.gym_app_server.GymAppServerApplication",
+            "projectName": "gym_app_server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
