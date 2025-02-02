@@ -1,0 +1,137 @@
+Reg Page
+        - Username
+        - Password
+ 
+Login Page
+        - Username
+        - Password
+
+
+Custom User Profile Creation Page     // while developing make sure it serves CRUD functionality so that user can change data later.
+         -email                       // UI design should have a button/route to come back to this page later when user needed.
+         -height
+         -weight
+         -dob
+
+
+
+Landing Page
+         - Streak ( user should be able to know the continuous login to his account " in numbers" )
+         - Body Weight ( user Should be able to see his current body weight )  // change body weight need to be added
+         - BMI ( user should be able to see his approximate BMI index ) //Implement BMI calculation logic 
+                                                                         (weight/height²). You might also consider adding categories               
+                                                                         (underweight, normal, overweight) with suggestions based on the BMI result.
+         
+     
+
+Personal Record (PR)
+ 
+         //Should list all the major Workouts
+         //Add Custom Exercise
+        
+         - Bench Press 
+         - Deadlift
+         - Squat
+         - Bicep Curl
+         - Trice Push Down
+
+// Allow users to add custom exercises dynamically. You could create an exercise template that allows the user to input exercise name, sets, reps, and weight.
+// Users should also be able to edit and delete their PR records.
+// Add the possibility of tracking max lifts or personal bests in each exercise.
+
+
+LOGS
+//Browse By Date Functionality
+
+(user should be able to see all the workout he had done on that day)
+
+eg:
+
+Date : 1/1/2025 
+
+Workout : Chest
+    
+ Flat Bench    | Weight | Rep | Set |
+               |--------|-----|-----|
+               | 50 kg  |  20 |  2  |
+
+Incline Bench  | Weight | Rep | Set |
+               |--------|-----|-----|
+               | 30 kg  |  20 |  5  |
+
+Fly Machine    | Weight | Rep | Set |
+               |--------|-----|-----|
+               | 30 kg  |  20 |  5  |
+
+
+//make the above as a UI in Figma 
+ 
+//Improvement:
+// Add a workout type (e.g., Chest, Back, Legs) to categorize and filter logs.
+// Allow users to edit entries in the log. For example, if they want to update the weight or reps after a session, they should be able to do so.
+// Allow notes or comments for each workout session, for example, tracking how they felt, any improvements, or areas to work on.
+// You might want to add the option to track rest periods between sets for accuracy.
+// Implement a search/filter feature to let users browse workouts by specific exercises or dates.
+// Provide reminders to log workouts if they missed a session.
+
+ 
+Additional Ideas:
+Leaderboard/Challenges: You could add a competitive element where users can compare their stats or workouts with others (with privacy settings).
+Notifications: Send users reminders to log workouts or stay on track with their goals.
+Gamification: Consider adding badges or achievements for certain milestones (e.g., completing 100 workouts or reaching a personal record).
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+Database Design
+
+Design the schema for MySQL to store user data, workouts, goals, progress, and friends.
+Create tables such as:
+Users (id, name, email, password, role, etc.)
+Workouts (id, userId, exerciseName, sets, reps, weight, date, etc.)
+Goals (id, userId, goalType, targetValue, date)
+Progress (id, userId, workoutId, measurement, date)
+Friends (id, userId, friendId)
+
+
+Define REST API Endpoints
+
+Create endpoints to handle:
+User registration and login (JWT authentication)
+CRUD operations for workouts, goals, progress tracking, and friends.
+Push notifications (This might require integration with an external service like Firebase)
+
+
+Security Configuration
+
+Set up JWT-based authentication for user login (use Spring Security for user authentication and authorization).
+Configure security for protected routes (e.g., login, create workout, etc.).
+
+
+
+
+
+
+
+
+
+
+Deployment
+
+Backend (Spring Boot): Deploy the Spring Boot application to cloud services like Heroku, AWS, or DigitalOcean. Ensure your MySQL database is accessible remotely or hosted on the cloud.
+Frontend (React Native): Use Expo or Android Studio/Xcode to deploy to Android/iOS devices for testing. Use the appropriate store for final deployment (Google Play Store, Apple App Store).
+
+
