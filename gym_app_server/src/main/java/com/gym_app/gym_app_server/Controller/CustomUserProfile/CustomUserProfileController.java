@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.gym_app.gym_app_server.ApiResponse.ApiResponse;
 import com.gym_app.gym_app_server.Modal.CustomUserProfile.CustomUserProfileModal;
 import com.gym_app.gym_app_server.Services.CustomUserProfile.CustomUserProfileServices;
 
@@ -21,8 +22,11 @@ public class CustomUserProfileController {
     }
 
     @PostMapping("/save-custom-user-profile")
-    public CustomUserProfileModal saveCustomUserProfileModal(@RequestBody CustomUserProfileModal customUserProfileModal){
-        return customUserProfileServices.saveCustomUserProfile(customUserProfileModal);
+    public ApiResponse saveCustomUserProfileModal(@RequestBody CustomUserProfileModal customUserProfileModal){
+        CustomUserProfileModal savedProfile = customUserProfileServices.saveCustomUserProfile(customUserProfileModal);
+        
+        // Return a custom response with success message
+        return new ApiResponse("Successfully created user", true, savedProfile);
     }
 
   
