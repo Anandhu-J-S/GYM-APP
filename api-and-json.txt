@@ -1,0 +1,29 @@
+  -Springboot (Custom User Profile Created)
+  -post api - localhost:8080/api/save-custom-user-profile 
+
+
+Json Input
+
+{
+
+     "user_profile_email":"anandhu@gmail.com",
+     "user_profile_height":"7",
+     "user_profile_weight":"50",
+     "user_profile_dob":"01/01/25"
+}
+
+
+Output
+
+
+{
+    "message": "Successfully created user",
+    "success": true,
+    "customUserProfileModal": {
+        "user_profile_id": 1,
+        "user_profile_email": "anandhu@gmail.com",
+        "user_profile_height": 7,
+        "user_profile_weight": 50,
+        "user_profile_dob": "01/01/25"
+    }
+}

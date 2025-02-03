@@ -25,7 +25,7 @@ public class CustomUserProfileModal {
     private int user_profile_height;
     private int user_profile_weight;
 
-    @JsonFormat(pattern = "MM/dd/yy")
+    @JsonFormat(pattern = "MM/dd/yy")    // 01/01/2025
     private LocalDate user_profile_dob;
 
     
