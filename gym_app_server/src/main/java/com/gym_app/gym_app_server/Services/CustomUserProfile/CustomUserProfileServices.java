@@ -13,14 +13,12 @@ public class CustomUserProfileServices {
 
     private final CustomUserProfileRepository customUserRepo;
 
-    // Method to save the custom user profile
-    public CustomUserProfileModal saveCustomUserProfile(CustomUserProfileModal customUserProfileModal){
+    // Method to save the custom user profile with the image
+    public CustomUserProfileModal saveCustomUserProfile(CustomUserProfileModal customUserProfileModal) {
         try {
             // Save and return the custom user profile
             return customUserRepo.save(customUserProfileModal);
         } catch (Exception e) {
-            // Log or handle the exception
-            // You could also throw a custom exception here
             throw new RuntimeException("Failed to save the user profile: " + e.getMessage());
         }
     }
