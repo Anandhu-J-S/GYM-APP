@@ -28,6 +28,4 @@ public class CustomUserProfileModal {
     @JsonFormat(pattern = "MM/dd/yy")    // 01/01/2025
     private LocalDate user_profile_dob;
 
-    
-    
 }

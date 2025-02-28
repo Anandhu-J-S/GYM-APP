@@ -17,4 +17,3 @@ public class ApiResponse {
     private CustomUserProfileModal customUserProfileModal;
     
 }
-//delete me later

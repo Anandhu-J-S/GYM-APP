@@ -79,7 +79,7 @@ Additional Ideas:
 Leaderboard/Challenges: You could add a competitive element where users can compare their stats or workouts with others (with privacy settings).
 Notifications: Send users reminders to log workouts or stay on track with their goals.
 Gamification: Consider adding badges or achievements for certain milestones (e.g., completing 100 workouts or reaching a personal record).
-
+//streak should be added only when new workout is created
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
